@@ -1,9 +1,5 @@
 {
-    "name": "hugo-atlantic-theme",
-    "version": "1.0.0",
-    "description": "A Hugo Tailwind starter blog",
-    "author": "rob@zerostatic.io",
-    "license": "MIT",
+    
     "scripts": {
         "start": "concurrently \"npm run watch:tailwind\" \"npm run watch:hugo\"",
         "build": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/dist/style.css && hugo --minify",
@@ -11,7 +7,7 @@
         "watch:hugo": "hugo server",
         "example": "concurrently \"npm run example:tailwind\" \"npm run example:hugo\"",
         "example:tailwind": "tailwindcss -c tailwind.config.example.js -i ./assets/css/tailwind.css -o ./assets/css/dist/style.css --watch",
-        "example:hugo": "hugo server --themesDir ../.."
+        "example:hugo": "hugo server /"
     },
     "dependencies": {
         "@tailwindcss/typography": "^0.5.0",
